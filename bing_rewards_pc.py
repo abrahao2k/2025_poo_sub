@@ -2,6 +2,9 @@
 # pip install pyautogui
 # no prompt de comando
 
+# A RESOLUÇÃO DA TELA DEVE SER 1920x1080
+# para outra resolução, ajuste a posição do clique na linha 35
+
 import pyautogui
 import time
 
@@ -29,7 +32,7 @@ print(palavras)
 time.sleep(5)
 
 for texto in palavras:
-    pyautogui.click(x=404, y=119)
+    pyautogui.click(x=404, y=119)   # <<< ajustar para resolução diferente
     pyautogui.hotkey("ctrl","a")
     pyautogui.press("delete")
     pyautogui.write(texto)
